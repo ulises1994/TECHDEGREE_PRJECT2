@@ -14,11 +14,14 @@ img {
 p {
 	font-size: 1.5em;
 	margin-bottom: 1.8em;
+  font-family: 'Just Another Hand', cursive;
 }
 h2,
 h3
 {
+  font-family: 'Sofia', cursive;
   font-size: 1.6em;
+  color: #ADD8E6
 }
 li{
   display: block;
@@ -53,17 +56,12 @@ p,.banner, li, .col, .portfolio, .wrapper{
 .nav-footer {
   display: none;
 }
-
-.logo{
-  margin-left: 50px;
-}
-
 .name-2{
   float: left;
   margin-top: 0;
   font-size: 1.5em;
 }
-.wrapper{
+.wrapper,.logo{
   margin: 0;
 }
 .back-top{
@@ -72,13 +70,18 @@ font-size: 1.5em;
 font-weight: bold;
 
 }
+.wrap{
+  background-color:#BC4123;
+  margin: 0;
+  width: 100%;
+}
 
 
 /* =================================
   Tablet screen Styles
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 .col{
   width: 50%;
   float: left;
@@ -90,33 +93,39 @@ font-weight: bold;
   margin-left: 25%;
   display: inline-block;
 }
+.nav-header,.logo,.nav-footer{
+  float: right;
 }
-/* =================================
-  Full screen Styles
-==================================== */
-@media (min-width: 1025px) {
+.nav-footer{
+display: inline;
+}
+.back-top{
+  display: none;
+}
 
-.col{
-	width: 30%;
-  float: left;
+ .banner{
+  display: inline-block;
+}
+.logo{
   margin-left: 30px;
 }
+.name{
+  font-size: 2em;
+}
+
+
+
+
 .clearfix::after {
   content: " ";
   display: table;
   clear: both;
-}
-.back-top{
-  display: none;
 }
 .name,.name-2{
   float: left;
 margin-top: 40px;
 }
 
-.nav-footer{
-display: inline;
-}
 .banner,.container{
   width: 80%;
   margin-left: 70px;
@@ -140,5 +149,29 @@ footer:before {
 .wrapper{
 	margin-left: 35%;
   width: 30%
+}
+
+}
+/* =================================
+  Full screen Styles
+==================================== */
+@media (min-width: 1024px) {
+
+.col{
+	width: 30%;
+  float: left;
+  margin-left: 30px;
+}
+
+.back-top{
+  display: none;
+}
+
+
+.nav-footer{
+display: inline;
+}
+.logo{
+  margin-left: 70px;
 }
 }
