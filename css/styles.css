@@ -1,0 +1,144 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+}
+a {
+text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+p {
+	font-size: 1.5em;
+	margin-bottom: 1.8em;
+}
+h2,
+h3
+{
+  font-size: 1.6em;
+}
+li{
+  display: block;
+}
+footer:before {
+    content: "";
+    clear: left;
+    float: left;
+    background-color: red;
+}s
+/* =================================
+  Base Layout Styles
+==================================== */
+p,.banner, li, .col, .portfolio, .wrapper{
+  text-align: center;
+  padding: 10px 15px;
+}
+.nav-header{
+    margin-top: 40px;
+}
+.name{
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+
+}
+
+.nav-header,.nav-footer,li{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.nav-footer {
+  display: none;
+}
+
+.logo{
+  margin-left: 50px;
+}
+
+.name-2{
+  float: left;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+.wrapper{
+  margin: 0;
+}
+.back-top{
+  float: right;
+font-size: 1.5em;
+font-weight: bold;
+
+}
+
+
+/* =================================
+  Tablet screen Styles
+==================================== */
+
+@media (min-width: 769px) {
+.col{
+  width: 50%;
+  float: left;
+
+}
+.wrapper{
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  display: inline-block;
+}
+}
+/* =================================
+  Full screen Styles
+==================================== */
+@media (min-width: 1025px) {
+
+.col{
+	width: 30%;
+  float: left;
+  margin-left: 30px;
+}
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.back-top{
+  display: none;
+}
+.name,.name-2{
+  float: left;
+margin-top: 40px;
+}
+
+.nav-footer{
+display: inline;
+}
+.banner,.container{
+  width: 80%;
+  margin-left: 70px;
+}
+.nav-header,.logo,.nav-footer{
+  float: right;
+}
+li{
+float: left;
+}
+.email,.number{
+margin:0;
+padding-top:10px;
+
+}
+footer:before {
+    content: "";
+    clear: left;
+    float: left;
+}
+.wrapper{
+	margin-left: 35%;
+  width: 30%
+}
+}
